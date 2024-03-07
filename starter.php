@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
   $pwd = $_POST["pwd"];
   if (isset($logins[$nom]) && $logins[$nom] === $pwd) {
   } else {
-    header("Location: ../index.html");
+    header("Location: index.html");
     exit;
   }
 } else {
